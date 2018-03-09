@@ -1,578 +1,704 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.layout-home')
 
-        <title>SindiMedici</title>
+@section('content')
 
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/slick.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/theme.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
+<div class="col-md-8">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- Horizontal Category (2 Columns) -->
+    <section class="cat-widget wdg-cat-horiz-2col-sm clearfix">
 
-        <!-- Styles -->
-        <style>
+        <div class="widget-title">
+            <h3><a href="#">Acontecimentos</a></h3>
+            <span class="sub-title">Fique informado</span>
 
-            .navbar-default {
-              background-color: #1ab394;
-              border: none;
-            }
-
-            .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-              background-color: #1ab394;
-            }
-
-            .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-              background-color: #1ab394;
-            }
-
-            .navbar-nav > li > .dropdown-menu {
-              background-color: #1ab394;
-            }
-
-            .bold_line span {
-              background-color: #1ab394;
-            }
-
-            .scrollToTop:hover, .scrollToTop:focus, .pagination_area ul li a {
-              background-color: #1ab394;
-            }
-
-            .scrollToTop, .pagination_area ul li a:hover {
-              background-color: #1ab394;
-            }
-
-            .slick-prev, .slick-next {
-              background-color: #1ab394;
-            }
-
-            .single_bottom_rightbar > h2 {
-              border-bottom: 3px solid #1ab394
-            }
-
-        </style>
-    </head>
-    <body>
-    <div id="preloader">
-      <div id="status">&nbsp;</div>
-    </div>
-    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-    <div class="container">
-      <header id="header">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="header_top">
-              <div class="header_top_left">
-                <ul class="top_nav">
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="pages/page.html">Sobre nós</a></li>
-                  <li><a href="pages/contact.html">Contato</a></li>
-                </ul>
-              </div>
-              <div class="header_top_right">
-                <form action="#" class="search_form">
-                  <input type="text" placeholder="Text to Search">
-                  <input type="submit" value="">
-                </form>
-              </div>
-            </div>
-            <div class="header_bottom">
-              <div class="header_bottom_left"><a class="logo" href="index.html">Sindi<strong>Medici</strong> <span>Sindicato Emblema</span></a></div>
-              <div class="header_bottom_right"><a href="#"><img src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
-            </div>
-          </div>
+            <div class="sep-widget"></div>
         </div>
-      </header>
-      <div id="navarea">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav custom_nav">
-                <li class=""><a href="index.html">Inicio</a></li>
-                <li class="dropdown"> <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Servicos</a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="pages/archive-main.html">Archive</a></li>
-                    <li><a href="pages/archive1.html">Archive 1</a></li>
-                    <li><a href="pages/archive2.html">Archive 2</a></li>
-                    <li><a href="pages/archive3.html">Archive 3</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown"> <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Archives</a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="pages/archive-main.html">Archive</a></li>
-                    <li><a href="pages/archive1.html">Archive 1</a></li>
-                    <li><a href="pages/archive2.html">Archive 2</a></li>
-                    <li><a href="pages/archive3.html">Archive 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="pages/single.html">Single page</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="pages/404.html">404 page</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <section id="mainContent">
-        <div class="content_top">
-          <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-6">
-              <div class="latest_slider">
-                <div class="slick_slider">
-                  <div class="single_iteam" style="max-height: 250px;"><img src="images/550x330x1.jpg" alt="">
-                    <h2><a class="slider_tittle" href="pages/single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-                  </div>
-                  <div class="single_iteam" style="max-height: 250px;"><img src="images/550x330x2.jpg" alt="">
-                    <h2><a class="slider_tittle" href="pages/single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-                  </div>
-                  <div class="single_iteam" style="max-height: 250px;"><img src="images/550x330x3.jpg" alt="">
-                    <h2><a class="slider_tittle" href="pages/single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-                  </div>
-                  <div class="single_iteam" style="max-height: 250px;"><img src="images/550x330x4.jpg" alt="">
-                    <h2><a class="slider_tittle" href="pages/single.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-6 col-sm-6">
-              <div class="content_top_right">
-                <ul class="featured_nav wow fadeInDown">
-                  <li><img src="images/300x215x1.jpg" alt="">
-                    <div class="title_caption"><a href="pages/single.html">Sed luctus semper odio aliquam rhoncus</a></div>
-                  </li>
-                  <li><img src="images/300x215x2.jpg" alt="">
-                    <div class="title_caption"><a href="pages/single.html">Sed luctus semper odio aliquam rhoncus</a></div>
-                  </li>
-                  <li><img src="images/300x215x3.jpg" alt="">
-                    <div class="title_caption"><a href="pages/single.html">Sed luctus semper odio aliquam rhoncus</a></div>
-                  </li>
-                  <li><img src="images/300x215x4.jpg" alt="">
-                    <div class="title_caption"><a href="pages/single.html">Sed luctus semper odio aliquam rhoncus</a></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--<div class="content_middle">
-          <div class="col-lg-3 col-md-3 col-sm-3">
-            <div class="content_middle_leftbar">
-              <div class="single_category wow fadeInDown">
-                <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a href="#" class="title_text">category1</a> </h2>
-                <ul class="catg1_nav">
-                  <li>
-                    <div class="catgimg_container"> <a href="pages/single.html" class="catg1_img"><img alt="" src="images/292x150x1.jpg"></a></div>
-                    <h3 class="post_titile"><a href="pages/single.html">Vestibulum ut est augue, in varius</a></h3>
-                  </li>
-                  <li>
-                    <div class="catgimg_container"> <a href="pages/single.html" class="catg1_img"><img alt="" src="images/292x150x2.jpg"></a></div>
-                    <h3 class="post_titile"><a href="pages/single.html">Vestibulum ut est augue, in varius</a></h3>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="content_middle_middle">
-              <div class="slick_slider2">
-                <div class="single_featured_slide"> <a href="pages/single.html"><img src="images/567x330x1.jpg" alt=""></a>
-                  <h2><a href="pages/single.html">Praesent vitae quam vitae arcu posuer 1</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulput...</p>
-                </div>
-                <div class="single_featured_slide"> <a href="pages/single.html"><img src="images/567x330x2.jpg" alt=""></a>
-                  <h2><a href="#">Praesent vitae quam vitae arcu posuer 2</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulput...</p>
-                </div>
-                <div class="single_featured_slide"> <a href="pages/single.html"><img src="images/567x330x3.jpg" alt=""></a>
-                  <h2><a href="#">Praesent vitae quam vitae arcu posuer 3</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulput...</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3">
-            <div class="content_middle_rightbar">
-              <div class="single_category wow fadeInDown">
-                <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a href="#" class="title_text">category2</a> </h2>
-                <ul class="catg1_nav">
-                  <li>
-                    <div class="catgimg_container"> <a href="pages/single.html" class="catg1_img"><img alt="" src="images/292x150x1.jpg"></a></div>
-                    <h3 class="post_titile"><a href="pages/single.html">Vestibulum ut est augue, in varius</a></h3>
-                  </li>
-                  <li>
-                    <div class="catgimg_container"> <a href="pages/single.html" class="catg1_img"><img alt="" src="images/292x150x2.jpg"></a></div>
-                    <h3 class="post_titile"><a href="pages/single.html">Vestibulum ut est augue, in varius</a></h3>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      -->
-        <div class="content_bottom">
 
-          <div class="col-lg-12 col-md-12">
-            <div class="content_bottom_left">
-              <div class="single_category wow fadeInDown">
-                <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Servicos</a> </h2>
-                <div class="wow fadeInDown">
+        <div class="widget-content color-theme clearfix">
+            <div>
+                <article class="first-post clearfix" data-showonscroll="true" data-animation="fadeIn">
+                    <figure class="sec-image">
 
-                </div>
-              </div>
-            </div>
-          </div>
+                        <a class="post-thumbnail">
+                            <img src="" data-src="holder.js/280x195/sky" /></a>
 
-          <div class="col-lg-8 col-md-8">
-            <div class="content_bottom_left">
-              <div class="single_category wow fadeInDown">
-                <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Acontecimentos</a> </h2>
-                <div class="business_category_left wow fadeInDown">
-                  <ul class="fashion_catgnav">
-                    <li>
-                      <div class="catgimg2_container"> <a href="pages/single.html"><img alt="" src="images/390x240x1.jpg"></a> </div>
-                      <h2 class="catg_titile"><a href="pages/single.html">Aenean mollis metus sit amet ligula adipiscing</a></h2>
-                      <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> <span class="meta_more"><a  href="#">Read More...</a></span> </div>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="business_category_right wow fadeInDown">
-                  <ul class="small_catg">
-                    <li>
-                      <div class="media wow fadeInDown"> <a class="media-left" href="pages/single.html"><img src="images/112x112.jpg" alt=""></a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="pages/single.html">Duis condimentum nunc pretium lobortis </a></h4>
-                          <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
+                        <div class="top-bar">
+                            <span class="likes"><a href="#"><i class="icon-heart"></i>15</a></span>
+                            <span class="comments"><i class="icon-bubble"></i>12</span>
+                            <span class="views"><i class="icon-tv"></i>500</span>
+
+                            <span class="btn-srp"><a href="#">Internet</a></span>
                         </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                          <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                          <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--
-              <div class="games_fashion_area">
-                <div class="games_category">
-                  <div class="single_category">
-                    <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Games</a> </h2>
-                    <ul class="fashion_catgnav wow fadeInDown">
-                      <li>
-                        <div class="catgimg2_container"> <a href="pages/single.html"><img alt="" src="images/390x240x1.jpg"></a> </div>
-                        <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
-                        <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> <span class="meta_more"><a  href="#">Read More...</a></span> </div>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
-                      </li>
-                    </ul>
-                    <ul class="small_catg wow fadeInDown">
-                      <li>
-                        <div class="media"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="fashion_category">
-                  <div class="single_category">
-                    <div class="single_category wow fadeInDown">
-                      <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Fashion</a> </h2>
-                      <ul class="fashion_catgnav wow fadeInDown">
-                        <li>
-                          <div class="catgimg2_container"> <a href="#"><img alt="" src="images/390x240x1.jpg"></a> </div>
-                          <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
-                          <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> <span class="meta_more"><a  href="#">Read More...</a></span> </div>
-                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
-                        </li>
-                      </ul>
-                      <ul class="small_catg wow fadeInDown">
-                        <li>
-                          <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                            <div class="media-body">
-                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                              <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
+
+                        <div class="bottom-bar">
+                            <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                            <div class="rating">
+                                <div class="stars retina x-2">
+                                    <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                    <div class="fill" style="width: 80%">
+                                        <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                            <div class="media-body">
-                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                              <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
+
+                        </div>
+
+                    </figure>
+
+                    <div class="sec-desc">
+
+                        <header class="title">
+                            <h4 class="post-title"><a href="#">NOTICIA 7</a></h4>
+                        </header>
+
+                        <div class="meta-info">
+                            <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                            <span class="date-time"><i class="icon-alarm2"></i>08 Mar 2018, 05:15</span>
+                        </div>
+
+
+                        <div class="post-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit urna, placerat quis massa sed, varius consequat ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean convallis luctus sapien a sollicitudin. Nulla vitae gravida diam, et venenatis tellus. Pellentesque congue auctor diam ut faucibus.</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <div class="related-posts">
+                    <div class="posts clearfix">
+
+                        <div class="post-item odd-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-location"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+                                    <div class="rating">
+                                        <div class="stars retina x-1">
+                                            <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                            <div class="fill" style="width: 80%">
+                                                <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">Smartphones</a></span>
+
+                                    <h5><a href="#" title="">NOTICIA 8</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>08 Mar 2018</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                        <div class="post-item even-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-music"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">Apple</a></span>
+
+                                    <h5><a href="#" title="">9 Facebook Pages You Won't Believe Have Millions of Likes</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>17 Aug 2013</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="post-item odd-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-camera"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">Samsung</a></span>
+
+                                    <h5><a href="#" title="">15 Mesmerizing Moments From Chinese New Year Celebrations</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>08 Mar 2018</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                        <div class="post-item even-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-camera2"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">Microsoft</a></span>
+
+                                    <h5><a href="#" title="">9 Amazing Artists to Follow on Twitter</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>20 Aug 2013</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="post-item odd-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-camera"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">OS</a></span>
+
+                                    <h5><a href="#" title="">NFL Players Had More Than 1,300 Injuries This Season</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>21 Aug 2013</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                        <div class="post-item even-item" data-showonscroll="true" data-animation="fadeIn">
+                            <article class="post-box clearfix">
+                                <figure class="wdg-col-4 sec-image">
+
+                                    <div class="mask-background white"></div>
+
+                                    <div class="post-type anim"><i class="icon-camera2"></i></div>
+
+                                    <div class="post-thumbnail border-radius-2px">
+                                        <img class="border-radius-2px" src="" data-src="holder.js/70x65/sky" />
+                                    </div>
+
+                                    <div class="rating">
+                                        <div class="stars retina x-1">
+                                            <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                            <div class="fill" style="width: 80%">
+                                                <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="more"></a>
+                                </figure>
+
+                                <header class="wdg-col-8 sec-title">
+
+                                    <span class="btn-srp"><a href="#cat">Technology</a></span>
+
+                                    <h5><a href="#" title="">Best Buy Slashes $400 Off Microsoft Surface Pro Price</a></h5>
+
+                                    <div class="meta-info">
+
+                                        <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                        <span class="date"><i class="icon-alarm2"></i>08 Mar 2018</span>
+
+                                    </div>
+
+                                </header>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slides Category -->
+    <section id="divCatScrollBox_1" class="cat-widget wdg-cat-scrollbox cat-scroll-box clearfix" data-showonscroll="true" data-animation="fadeIn">
+
+        <div class="widget-title">
+            <h3><a href="#">Carousel Category</a></h3>
+            <span class="sub-title">Something Else Here</span>
+
+            <div class="sep-widget"></div>
+        </div>
+
+        <div class="widget-content color-theme clearfix">
+            <div>
+                <ul class="nav-arrows list-inline">
+                    <li><a href="#" class="backward"><i class="icon-arrow-left6"></i></a></li>
+                    <li><a href="#" class="forward"><i class="icon-arrow-right6"></i></a></li>
+                </ul>
+
+                <div class="scroll-box">
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/314x210/sky" /></a>
+
+                            <div class="top-bar">
+                                <span class="likes"><a href="#"><i class="icon-heart"></i>15</a></span>
+
+                                <span class="comments"><i class="icon-bubble"></i>1500</span>
+                                <span class="views"><i class="icon-tv"></i>2000</span>
+
+                                <span class="btn-srp"><a href="pg-category.html">Sport</a></span>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+
+                            <header class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Featured Image</a></h4>
+
+                                <div class="meta-info">
+                                    <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                    <span class="date-time"><i class="icon-alarm2"></i>08 Mar 2018, 05:15</span>
+                                </div>
+
+                            </header>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 30%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
                     </div>
-                  </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/314x210/sky" /></a>
+
+                            <div class="top-bar">
+                                <span class="likes"><a href="#"><i class="icon-heart"></i>15</a></span>
+
+                                <span class="comments"><i class="icon-bubble"></i>1500</span>
+                                <span class="views"><i class="icon-tv"></i>2000</span>
+
+                                <span class="btn-srp"><a href="#">Movies</a></span>
+                            </div>
+
+                            <header class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Youtube Video</a></h4>
+
+                                <div class="meta-info">
+                                    <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                    <span class="date-time"><i class="icon-alarm2"></i>08 Mar 2018, 05:15</span>
+                                </div>
+
+                            </header>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 80%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/314x210/sky" /></a>
+
+                            <div class="top-bar">
+                                <span class="likes"><a href="#"><i class="icon-heart"></i>15</a></span>
+
+                                <span class="comments"><i class="icon-bubble"></i>1500</span>
+                                <span class="views"><i class="icon-tv"></i>2000</span>
+
+                                <span class="btn-srp"><a href="#">Music</a></span>
+                            </div>
+
+                            <header class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With SoundCloud</a></h4>
+
+                                <div class="meta-info">
+                                    <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                    <span class="date-time"><i class="icon-alarm2"></i>08 Mar 2018, 05:15</span>
+                                </div>
+
+                            </header>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 60%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/314x210/sky" /></a>
+
+                            <div class="top-bar">
+                                <span class="likes"><a href="#"><i class="icon-heart"></i>15</a></span>
+
+                                <span class="comments"><i class="icon-bubble"></i>1500</span>
+                                <span class="views"><i class="icon-tv"></i>2000</span>
+
+                                <span class="btn-srp"><a href="#">Fashion</a></span>
+                            </div>
+
+                            <header class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Googlemap</a></h4>
+
+                                <div class="meta-info">
+                                    <span class="author"><i class="icon-user3"></i><a href="#">Administrador</a></span>
+                                    <span class="date-time"><i class="icon-alarm2"></i>08 Mar 2018, 05:15</span>
+                                </div>
+
+                            </header>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 50%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </div>
-            -->
-              <div class="technology_catrarea">
-                <div class="single_category">
-                  <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Galeria</a> </h2>
-                  <div class="business_category_left">
-                    <ul class="fashion_catgnav wow fadeInDown">
-                      <li>
-                        <div class="catgimg2_container"> <a href="#"><img alt="" src="images/390x240x1.jpg"></a> </div>
-                        <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
-                        <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> <span class="meta_more"><a  href="#">Read More...</a></span> </div>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="business_category_right">
-                    <ul class="small_catg wow fadeInDown">
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <div class="comments_box"> <span class="meta_date">14/12/2045</span> <span class="meta_comment"><a href="#">No Comments</a></span> </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="content_bottom_right">
-              <div class="single_bottom_rightbar">
-                <h2>Recent Post</h2>
-                <ul class="small_catg popular_catg wow fadeInDown">
-                  <li>
-                    <div class="media wow fadeInDown"> <a href="#" class="media-left"><img alt="" src="images/112x112.jpg"> </a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media wow fadeInDown"> <a href="#" class="media-left"><img alt="" src="images/112x112.jpg"> </a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media wow fadeInDown"> <a href="#" class="media-left"><img alt="" src="images/112x112.jpg"> </a>
-                      <div class="media-body">
-                        <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="single_bottom_rightbar">
-                <ul role="tablist" class="nav nav-tabs custom-tabs">
-                  <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="home" href="#mostPopular">Most Popular</a></li>
-                  <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="messages" href="#recentComent">Recent Comment</a></li>
-                </ul>
-                <div class="tab-content">
-                  <div id="mostPopular" class="tab-pane fade in active" role="tabpanel">
-                    <ul class="small_catg popular_catg wow fadeInDown">
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div id="recentComent" class="tab-pane fade" role="tabpanel">
-                    <ul class="small_catg popular_catg">
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media wow fadeInDown"> <a class="media-left" href="#"><img src="images/112x112.jpg" alt=""></a>
-                          <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4>
-                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="single_bottom_rightbar">
-                <h2>Blog Archive</h2>
-                <div class="blog_archive wow fadeInDown">
-                  <form action="#">
-                    <select>
-                      <option value="">Blog Archive</option>
-                      <option value="">October(20)</option>
-                    </select>
-                  </form>
-                </div>
-              </div>
-              <div class="single_bottom_rightbar wow fadeInDown">
-                <h2>Popular Lnks</h2>
-                <ul>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Blog Home</a></li>
-                  <li><a href="#">Error Page</a></li>
-                  <li><a href="#">Social link</a></li>
-                  <li><a href="#">Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-    <footer id="footer">
-      <div class="footer_top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <div class="single_footer_top wow fadeInLeft">
-                <h2>Flicker Images</h2>
-                <ul class="flicker_nav">
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="images/75x75.jpg" alt=""></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <div class="single_footer_top wow fadeInDown">
-                <h2>Labels</h2>
-                <ul class="labels_nav">
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Games</a></li>
-                  <li><a href="#">Fashion</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Technology</a></li>
-                  <li><a href="#">Slider</a></li>
-                  <li><a href="#">Life &amp; Style</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <div class="single_footer_top wow fadeInRight">
-                <h2>About Us</h2>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec laoreet orci, eget ullamcorper quam. Phasellus lorem neque, </p>
-              </div>
-            </div>
-          </div>
+    </section>
+
+</div>
+
+<section class="col-md-4">
+    <h2 class="hidden">Sidebar</h2>
+
+    <aside class="widget" data-showonscroll="true" data-animation="fadeIn">
+        <div class="widget-title clearfix">
+            <h3>Serviços</h3>
+            <div class="sep-widget"></div>
         </div>
-      </div>
-      <div class="footer_bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="footer_bottom_left">
-                <p>Copyright &copy; 2045 <a href="index.html">magExpress</a></p>
-              </div>
+
+        <div class="widget-content clearfix">
+            <div class="wdg-classic-posts color-theme clearfix">
+                <ul class="list-unstyled text-center">
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a target="_blank" href="http://sitimeci.com.br/" title="">Contribuição</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="http://sitimeci.com.br/" title="">Boletos</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Sindicalize-se</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Agenda de Homologação</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Consultar Processo</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Convenios</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Deixe seu Curriculo</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="post-item">
+                        <article class="post-box clearfix">
+                            <div class="wdg-col-8 sec-title">
+                                <h5><a href="#" title="">Fale Conosco</a></h5>
+                            </div>
+                        </article>
+                    </li>
+
+                </ul>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="footer_bottom_right">
-                <p>Developed BY Wpfreeware</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>
-    <script src="{{asset('/js/jquery.min.js')}}"></script>
-    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/js/wow.min.js')}}"></script>
-    <script src="{{asset('/js/slick.min.js')}}"></script>
-    <script src="{{asset('/js/custom.js')}}"></script>
-    </body>
-</html>
+    </aside>
+
+    <aside id="divWidgetSlides_1" class="widget wdg-scroll-box" data-showonscroll="true" data-animation="fadeIn">
+        <div class="widget-title clearfix">
+            <h3>Slide Widget</h3>
+            <div class="sep-widget"></div>
+        </div>
+
+        <div class="widget-content clearfix">
+            <div>
+                <ul class="nav-arrows list-inline">
+                    <li><a href="#" class="backward"><i class="icon-arrow-left6"></i></a></li>
+                    <li><a href="#" class="forward"><i class="icon-arrow-right6"></i></a></li>
+                </ul>
+
+                <div class="scroll-box color-theme">
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/308x210/sky" /></a>
+
+                            <div class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Featured Image</a></h4>
+                            </div>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 90%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/308x210/sky" /></a>
+
+                            <div class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Featured Image And Lightbox</a></h4>
+                            </div>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 60%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/308x210/sky" /></a>
+
+                            <div class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Youtube Video</a></h4>
+                            </div>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 20%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="post-item">
+                        <article class="post-box clearfix">
+                            <a class="post-thumbnail">
+                                <img src="" data-src="holder.js/308x210/sky" /></a>
+
+                            <div class="title-bar">
+                                <h4 class="post-title"><a href="#">Post With Sound Cloud</a></h4>
+                            </div>
+
+                            <div class="bottom-bar">
+                                <span class="btn-srp"><a href="#">Leia mais...</a></span>
+
+                                <div class="rating">
+                                    <div class="stars retina x-2">
+                                        <div class="gray"><i></i><i></i><i></i><i></i><i></i></div>
+
+                                        <div class="fill" style="width: 50%">
+                                            <div class="light"><i></i><i></i><i></i><i></i><i></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="widget" data-showonscroll="true" data-animation="fadeIn">
+        <div class="widget-title clearfix">
+            <h3>Video</h3>
+            <div class="sep-widget"></div>
+        </div>
+
+        <div class="widget-content clearfix">
+            <div class="wdg-video clearfix">
+                <!--<iframe itemprop="contentURL" class="youtube-player" type="text/html" width="100%" height="200" src="http://www.youtube.com/embed/P5_Msrdg3Hk?wmode=transparent&amp;wmode=opaque" allowfullscreen="" frameborder="0"></iframe>-->
+                <img src="" data-src="holder.js/308x210/sky" />
+            </div>
+        </div>
+    </aside>
+
+</section>
+
+@endsection
