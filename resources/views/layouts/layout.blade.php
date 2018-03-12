@@ -93,34 +93,9 @@
                                     <a href="#"><i class="zoc-gplus"></i></a>
                                 </li>
 
-                                <li class="tooltip_item pinterest-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="pinterest">
-                                    <div class="mask-background animated lightSpeedIn"></div>
-                                    <a href="#"><i class="zoc-pinterest"></i></a>
-                                </li>
-
                                 <li class="tooltip_item youtube-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="youtube">
                                     <div class="mask-background animated lightSpeedIn"></div>
                                     <a href="#"><i class="zoc-youtube"></i></a>
-                                </li>
-
-                                <li class="tooltip_item rss-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="rss">
-                                    <div class="mask-background animated lightSpeedIn"></div>
-                                    <a href="#"><i class="zoc-rss"></i></a>
-                                </li>
-
-                                <li class="tooltip_item github-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="github">
-                                    <div class="mask-background animated lightSpeedIn"></div>
-                                    <a href="#"><i class="zoc-github-circled"></i></a>
-                                </li>
-
-                                <li class="tooltip_item instagram-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="instagram">
-                                    <div class="mask-background animated lightSpeedIn"></div>
-                                    <a href="#"><i class="zoc-instagram"></i></a>
-                                </li>
-
-                                <li class="tooltip_item vk-metro-but-16" data-toggle="tooltip" data-placement="bottom" title="vk">
-                                    <div class="mask-background animated lightSpeedIn"></div>
-                                    <a href="#"><i class="zoc-vk"></i></a>
                                 </li>
 
                             </ul>

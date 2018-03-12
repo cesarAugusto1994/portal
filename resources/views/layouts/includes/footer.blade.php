@@ -15,7 +15,7 @@
                 </div>
             </aside>
 
-
+<!--
             <aside class="widget" data-showonscroll="true" data-animation="fadeIn">
                 <div class="widget-title clearfix">
                     <h3>Tags</h3>
@@ -79,9 +79,10 @@
                         </ul>
                     </div>
                 </div>
-            </aside>
+            </aside>-->
         </div>
 
+        <!--
         <div class="col-md-4">
 
             <aside class="widget" data-showonscroll="true" data-animation="fadeIn">
@@ -327,7 +328,7 @@
             </aside>
 
         </div>
-
+    -->
 
 
     </section>

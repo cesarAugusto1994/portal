@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Welcome');
+        return view('welcome');
     }
 
     public function nossaHistoria()
@@ -39,5 +39,10 @@ class HomeController extends Controller
     public function diretoria()
     {
         return view('paginas/diretoria');
+    }
+
+    public function faleConosco()
+    {
+        return view('paginas/fale_conosco');
     }
 }

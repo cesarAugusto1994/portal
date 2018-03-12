@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/nossa-historia', 'HomeController@nossaHistoria')->name('nossa_historia');
 Route::get('/diretoria', 'HomeController@diretoria')->name('diretoria');
+Route::get('/fale-conosco', 'HomeController@faleConosco')->name('fale_conosco');
 
 Auth::routes();
 
