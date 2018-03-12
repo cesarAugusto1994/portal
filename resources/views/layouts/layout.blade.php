@@ -137,8 +137,8 @@
             <div class="logo" itemscope itemtype="http://schema.org/Brand">
                 <h1 class="hidden" itemprop="name">SitiMedici</h1>
                 <a href="#">
-                    <img itemprop="logo" class="site-logo" src="http://sitimeci.com.br/lgo_web.jpg" data-src="http://sitimeci.com.br/lgo_web.jpg" alt="main-logo"  style="width: 160px; height: 90px;"/>
-<img itemprop="logo" class="site-logo-retina" src="http://sitimeci.com.br/lgo_web.jpg" data-src="http://sitimeci.com.br/lgo_web.jpg" alt="main-logo" style="width: 160px; height: 90px;" />
+                    <img itemprop="logo" class="site-logo" src="http://sitimeci.com.br/lgo_web.jpg" data-src="http://sitimeci.com.br/lgo_web.jpg" alt="main-logo"  style="width: 200px; height: 90px;"/>
+                    <img itemprop="logo" class="site-logo-retina" src="http://sitimeci.com.br/lgo_web.jpg" data-src="http://sitimeci.com.br/lgo_web.jpg" alt="main-logo" style="width: 200px; height: 90px;" />
                 </a>
             </div>
 
