@@ -338,14 +338,14 @@
 
         <div class="col-md-6">
             <ul>
-                <li><a href="pg-sample.html">About US</a></li>
-                <li><a href="pg-sample.html">Contact US</a></li>
-                <li><a href="pg-sample.html">Privacy Policy</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Politica de Privacidade</a></li>
             </ul>
         </div>
 
         <div class="col-md-6">
-            <p class="pull-right">&copy; Copyright 2014 MAG4U Magazine Theme by Administrador, All Rights Reserved</p>
+            <p class="pull-right">&copy; 2018 SitiMedici, Todos os direitos reservados. Desenvolvido por <a href="#">César Augusto</a>.</p>
         </div>
 
     </section>

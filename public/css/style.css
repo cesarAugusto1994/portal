@@ -18,7 +18,8 @@
 /* Mag4u - Responsive Retina News, Magazine HTML Theme */
 
 .background-main {
-    background: url('http://farm4.staticflickr.com/3670/13127704793_6ec8319b3d_o.jpg');
+    /*background: url('http://farm4.staticflickr.com/3670/13127704793_6ec8319b3d_o.jpg');*/
+    background-color: #ecf0f5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

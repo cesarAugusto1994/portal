@@ -142,10 +142,10 @@
                 </a>
             </div>
 
-            <div class="advertise-790 visible-lg">
+            <!--<div class="advertise-790 visible-lg">
                 <a href="#">
                     <img src="" data-src="holder.js/790x90/sky" /></a>
-            </div>
+            </div>-->
         </header>
 
         @include('layouts.includes.menu')
