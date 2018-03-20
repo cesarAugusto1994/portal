@@ -19,7 +19,7 @@
                                 <a href="#" class="dropdown-toggle" data-hover="dropdown">{{ $categoria->nome }}<span class="nav-line"></span></a>
                                 <ul class="dropdown-menu animated fadeInLeft">
                                   @foreach($categoria->paginas as $pagina)
-                                    <li><a href="{{ $pagina->url != '#' ? $categoria->url : '#' }}">{{ $pagina->nome }}</a></li>
+                                    <li><a href="{{ $pagina->url != '#' ? $pagina->url : '#' }}">{{ $pagina->nome }}</a></li>
                                   @endforeach
                                 </ul>
                             </li>
